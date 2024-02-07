@@ -1,0 +1,13 @@
+/* 元素初始化 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 800px;
+    min-height: 500px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+}
