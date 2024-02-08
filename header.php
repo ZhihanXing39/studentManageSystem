@@ -43,9 +43,9 @@
         <h1>学生管理系统</h1>
         <nav>
             <ul>
-                <li><a href="">学生</a></li>
-                <li><a href="">课程</a></li>
-                <li><a href="">成绩</a></li>
+                <li>学生</li>
+                <li>课程</li>
+                <li>成绩</li>
             </ul>
         </nav>
     </header>
