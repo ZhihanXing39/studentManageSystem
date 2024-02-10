@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
+    <script src="script/selectStu.js" async></script>
     <style>
         *{
             padding: 0;
@@ -32,7 +33,7 @@
             align-items: center;
         }
         header nav ul li{
-            display: flexbox;
+            display: flex;
             list-style: none;
             font-size: 20px;
         }
@@ -43,9 +44,9 @@
         <h1>学生管理系统</h1>
         <nav>
             <ul>
-                <li>学生</li>
-                <li>课程</li>
-                <li>成绩</li>
+                <li id="stu">学生</li>
+                <li id="course">课程</li>
+                <li id="grade">成绩</li>
             </ul>
         </nav>
     </header>

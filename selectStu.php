@@ -1,6 +1,6 @@
 <?php
     //读取配置文件
-    $configFile = '../config.json';
+    $configFile = 'config.json';
     $configMsg = file_get_contents($configFile);
     //解析为数组
     $config = json_decode($configMsg,true);
@@ -25,12 +25,14 @@
     //输出数据
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
-            echo "<div>"
-                 . $row["id"] . "&nbsp"
-                 . $row["name"] . "&nbsp"
-                 . $row["gender"]
-                 . $row["klass"]
-                 .  "</div>" ;
+            echo "<table>"
+                 . "<tr>"
+                 . "<td>" . $row["id"] . "</td>"
+                 . "<td>" . $row["name"] . "</td>"
+                 . "<td>" . $row["gender"] . "</td>"
+                 . "<td>" . $row["klass"] . "</td>"
+                 . "</tr>"
+                 .  "</table>" ;
         }
     }
 ?>
