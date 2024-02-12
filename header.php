@@ -37,6 +37,10 @@
             list-style: none;
             font-size: 20px;
         }
+        header nav ul li:hover{
+            cursor: pointer;
+            color: red;
+        }
     </style>
 </head>
 <body>
