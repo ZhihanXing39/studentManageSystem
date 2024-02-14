@@ -20,9 +20,7 @@
     }
 
     //获取要删除信息的id
-    if (isset($_POST["id"])) {  
-        $id = $_POST["id"];  
-    }
+    $id = $_GET["q"];
     //预处理及绑定
     $stmt = $conn->prepare("DELETE FROM student WHERE id = ?");
     $stmt->bind_param("i",$id);

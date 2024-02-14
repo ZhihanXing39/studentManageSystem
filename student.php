@@ -6,6 +6,7 @@
     <title>学生</title>
     <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/select.css">
+    <script src="script/deleteStu.js" async></script>
 </head>
 <body>
     <?php include "header.php";?>

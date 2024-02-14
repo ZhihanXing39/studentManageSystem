@@ -34,5 +34,5 @@
     $conn->close();
 
     //返回主页
-    header("Location:/");
+    header("Location:/student.php");
 ?>
