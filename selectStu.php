@@ -26,14 +26,49 @@
     if($result->num_rows > 0){
         
         while($row = $result->fetch_assoc()){
+            //输出信息到页面
             echo "<table>"
                  . "<tr>"
                  . "<td>" . $row["id"] . "</td>"
                  . "<td>" . $row["name"] . "</td>"
                  . "<td>" . $row["gender"] . "</td>"
                  . "<td>" . $row["klass"] . "</td>"
+                 . "<td><button id=". $row["id"] .">修改</button></td>"
+                 . "<td><button id=". $row["id"] ."name='delete'>删除</button></td>"
                  . "</tr>"
                  .  "</table>" ;
         }
     }
 ?>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {  
+    //将要删除的信息id发送到服务端
+    let buttons = document.getElementsByName("delete");
+    console.log(buttons);
+
+    //遍历元素添加事件
+    for(let i=0;i<buttons.length;i++){
+        buttons[i].addEventListener("click",sendId);
+        console.log("循环执行了！");
+    }
+    function sendId(){
+        //获取id
+        let id = this.id;
+        console.log("点击事件触发了");
+
+        //使用fetch发送
+        fetch("deleteStu.php",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/x-www-form-urlencoded"
+            },
+            body:"id="+id,
+        })
+        .then(response=>response.text())
+        .then(data=>console.log(data))
+        .catch((error)=>{
+            console.error('Error',error);
+        });
+    }
+});  
+</script>

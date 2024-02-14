@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <script src="script/selectStu.js" async></script>
     <style>
         *{
             padding: 0;
@@ -48,7 +47,7 @@
         <h1>学生管理系统</h1>
         <nav>
             <ul>
-                <li id="stu">学生</li>
+                <li id="stu"><a href="student.php">学生</a></li>
                 <li id="course">课程</li>
                 <li id="grade">成绩</li>
             </ul>
