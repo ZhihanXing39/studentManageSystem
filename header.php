@@ -36,7 +36,10 @@
             list-style: none;
             font-size: 20px;
         }
-        header nav ul li:hover{
+        header nav ul li a{
+            color: white;
+        }
+        header nav ul li a:hover{
             cursor: pointer;
             color: red;
         }
@@ -48,8 +51,8 @@
         <nav>
             <ul>
                 <li id="stu"><a href="student.php">学生</a></li>
-                <li id="course">课程</li>
-                <li id="grade">成绩</li>
+                <li id="course"><a href="">课程</a></li>
+                <li id="grade"><a href="">成绩</a></li>
             </ul>
         </nav>
     </header>
