@@ -1,7 +1,6 @@
 //删除学生信息的JS
 //获取元素
 let buttons = document.querySelectorAll(".delete");
-console.log(buttons[0]);
 
 //添加事件
 for(let i=0;i<buttons.length;i++){

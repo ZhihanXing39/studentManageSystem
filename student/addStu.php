@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>添加学生</title>
-    <script src="script/addStu.js" async></script>
+    <script src="../script/addStu.js" async></script>
     <style>
         *{
             padding: 0;

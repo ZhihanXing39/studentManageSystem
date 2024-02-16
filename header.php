@@ -50,7 +50,7 @@
         <h1>学生管理系统</h1>
         <nav>
             <ul>
-                <li id="stu"><a href="student.php">学生</a></li>
+                <li id="stu"><a href="student/student.php">学生</a></li>
                 <li id="course"><a href="">课程</a></li>
                 <li id="grade"><a href="">成绩</a></li>
             </ul>

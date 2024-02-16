@@ -1,7 +1,7 @@
 //这是删除学生信息的PHP
 <?php
     //读取配置文件
-    $configFile = 'config.json';
+    $configFile = '../config.json';
     $configMsg = file_get_contents($configFile);
     //解析为数组
     $config = json_decode($configMsg,true);
