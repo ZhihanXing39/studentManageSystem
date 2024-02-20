@@ -10,6 +10,8 @@
 <body>
     <?php include "../header.php"?>
     <main>
+        <?php include "addSco.php"?>
+        <button><a href="/index.php">返回</a></button>
         <?php include "selectSco.php"?>
     </main>
     <?php include "../footer.php"?>

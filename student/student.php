@@ -13,8 +13,8 @@
     <?php include "../header.php";?>
     <main>
         <?php include 'addStu.php';?>
-        <?php include 'modifyStu.php';?>
         <button><a href="/index.php">返回</a></button>
+        <?php include 'modifyStu.php';?>
         <?php include "selectStu.php";?>
     </main>
     <?php include "../footer.php";?>
