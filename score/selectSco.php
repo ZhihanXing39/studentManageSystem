@@ -33,7 +33,7 @@
                  . "<td>" . $row["sname"] . "</td>"
                  . "<td>" . $row["cname"] . "</td>"
                  . "<td>" . $row["grade"] . "</td>"
-                 . "<td><button>修改</button></td>"
+                 . "<td><button class='update' data-sid=".$row["sid"]." data-cid=".$row["cid"].">修改</button></td>"
                  . "<td><button class='delete' data-sid=".$row["sid"]." data-cid=".$row["cid"].">删除</button></td>"
                  . "</tr>"
                  .  "</table>" ;

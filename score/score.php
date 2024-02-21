@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="../style/public.css">
     <link rel="stylesheet" href="../style/select.css">
     <script src="../script/deleteSco.js" async></script>
+    <script src="../script/updateSco.js" async></script>
 </head>
 <body>
     <?php include "../header.php"?>
     <main>
         <?php include "addSco.php"?>
         <button><a href="/index.php">返回</a></button>
+        <?php include "modifySco.php"?>
         <?php include "selectSco.php"?>
     </main>
     <?php include "../footer.php"?>
