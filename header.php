@@ -12,7 +12,7 @@
         }
         header{
             width: 100%;
-            height: 100px;
+            height: 10rem;
             background-color: #002D5E;
             color: white;
             text-align: center;
@@ -20,21 +20,21 @@
         }
         header nav{
             width: 100%;
-            height: 30px;
+            height: 3rem;
             background-color: #008CBA;
             position: absolute;
             bottom: 0;
         }
         header nav ul{
             display: flex;
-            gap: 20px;
+            gap: 2rem;
             justify-content: center;
             align-items: center;
         }
         header nav ul li{
             display: flex;
             list-style: none;
-            font-size: 20px;
+            font-size: 2rem;
         }
         header nav ul li a{
             color: white;

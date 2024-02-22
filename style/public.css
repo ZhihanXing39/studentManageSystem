@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+/* 响应式设计 */
+html{
+    font-size: 62.5%;
+}
 main{
-    width: 800px;
-    min-height: 500px;
+    width: 80rem;
+    min-height: 50rem;
     background-color: #F2F2F2;
     margin: 0 auto;
 }

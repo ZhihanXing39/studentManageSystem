@@ -6,9 +6,9 @@
     <title>修改学生信息</title>
     <style>
         .modifyStu{
-            width: 800px;
-            height: 400px;
-            border: 1px solid;
+            width: 80rem;
+            height: 40rem;
+            border: .1rem solid;
             background-color: #3399ff;
             /* 布局信息 */
             display: none;

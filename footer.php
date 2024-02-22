@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>footer</title>
+    <link rel="stylesheet" href="style/public.css">
     <style>
         footer{
-            height: 70px;
+            height: 7rem;
             text-align: center;
             background-color: black;
             color: white;
-            padding-top: 5px;
+            padding-top: .5rem;
         }
     </style>
 </head>
