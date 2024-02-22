@@ -14,7 +14,7 @@ function deleteSco(button) {
     let sid = button.getAttribute('data-sid');  
     let cid = button.getAttribute('data-cid');  
     
-    axios.get("/deleteSco.php?sid=" + sid + "&cid=" + cid)
+    axios.get("/score/deleteSco.php?sid=" + sid + "&cid=" + cid)
         .then(res => {
             console.log("传递成功！HTTP状态码：" + res.status);
             // 可能需要在此处处理服务器的响应

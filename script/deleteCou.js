@@ -10,7 +10,7 @@ for(let i=0;i<buttons.length;i++){
 
 //传递课程id的函数
 function deleteStu(){
-    axios.get('/deleteCou.php?q=' + this.id)
+    axios.get('/course/deleteCou.php?q=' + this.id)
         .then(res => {
             // 若成功则执行
             console.log("传递成功！HTTP状态码：" + res.status);
