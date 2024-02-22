@@ -10,13 +10,18 @@ for(let i=0;i<buttons.length;i++){
 
 //传递课程id的函数
 function deleteStu(){
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function(){
-        if(xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log("传递成功！");
-        }
-    }
-    xmlhttp.open("GET","deleteCou.php?q="+this.id);
-    xmlhttp.send();
-    location.reload();
+    axios.get('/deleteCou.php?q=' + this.id)
+        .then(res => {
+            // 若成功则执行
+            console.log("传递成功！HTTP状态码：" + res.status);
+        })
+        .catch(err => {
+            // 若出错则执行
+            console.log("发生错误！HTTP状态码：" + err.response.status + " 详细信息：");
+            console.log(error.toJSON());
+        })
+        .finally(() => {
+            // 请求发出后无论如何都会执行
+            location.reload();
+        });
 }

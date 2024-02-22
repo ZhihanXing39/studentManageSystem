@@ -10,13 +10,15 @@ for(let i=0;i<buttons.length;i++){
 
 //传递学生id的函数
 function deleteStu(){
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function(){
-        if(xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log("传递成功！");
-        }
-    }
-    xmlhttp.open("GET","deleteStu.php?q="+this.id);
-    xmlhttp.send();
-    location.reload();
+    axios.get("/deleteStu.php?q="+this.id)
+        .then(res => {
+            console.log("传递成功！HTTP状态码：" + res.status);
+        })
+        .catch(err => {
+            console.log("发生错误！HTTP状态码：" + err.response.status + " 详细信息：");
+            console.log(error.toJSON());
+        })
+        .finally(() => {
+            location.reload();
+        });
 }
