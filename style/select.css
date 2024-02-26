@@ -1,4 +1,12 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
 table tr td {
-    width: 5rem;
-    text-align: center;
+    /* width: 5rem; */
+    width: 16%;
+    border: 1px solid ;
+    padding: 8px;
+    text-align: left;
 }
