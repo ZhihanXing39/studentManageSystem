@@ -1,5 +1,6 @@
 <?php
     //这是验证用户登录信息的php
+    session_start();
     //连接数据库
     include "database.php";
 
@@ -14,6 +15,7 @@
         while($row = $result->fetch_assoc()){
             if($username === $row['username']){
                 if($password === $row['password']){
+                    $_SESSION['username'] = $username;
                     header("Location:/index.php");
                 }else{
                     echo "密码错误！";
