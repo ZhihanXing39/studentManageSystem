@@ -10,6 +10,7 @@
     <script src="https://unpkg.zhimg.com/axios/dist/axios.min.js"></script>
     <script src="../script/deleteSco.js" async></script>
     <script src="../script/updateSco.js" async></script>
+    <script src="../script/logout.js" async></script>
 </head>
 <body>
     <?php include "../header.php"?>

@@ -7,6 +7,7 @@
     <title>学生管理系统</title>
     <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/select.css">
+    <script src="script/logout.js" async></script>
 </head>
 <body>
     <?php include 'header.php';?>

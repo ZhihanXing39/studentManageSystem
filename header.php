@@ -35,6 +35,8 @@
             display: flex;
             list-style: none;
             font-size: 2rem;
+            line-height: 3rem;
+            cursor: pointer;
         }
         header nav ul li a{
             color: white;
@@ -53,6 +55,7 @@
                 <li id="stu"><a href="/student/student.php">学生</a></li>
                 <li id="course"><a href="/course/course.php">课程</a></li>
                 <li id="grade"><a href="/score/score.php">成绩</a></li>
+                <li id="logout">登出</li>
             </ul>
         </nav>
     </header>
