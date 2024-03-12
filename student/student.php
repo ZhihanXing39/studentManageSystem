@@ -7,6 +7,7 @@
     <title>学生</title>
     <link rel="stylesheet" href="../style/public.css">
     <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="../style/page.css">
     <script src="https://unpkg.zhimg.com/axios/dist/axios.min.js"></script>
     <script src="../script/deleteStu.js" async></script>
     <script src="../script/updateStu.js" async></script>

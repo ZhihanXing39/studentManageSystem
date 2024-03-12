@@ -1,9 +1,12 @@
 <?php
     include '../utils/database.php';
     
-    //查询语句
-    $selectAll = "SELECT * FROM `course`";
-    $result = $conn->query($selectAll);
+    // 获取总记录数（假设从数据库查询得到）
+    $totalRecordQuery = mysqli_query($conn,"SELECT COUNT(*) AS total_records FROM course");
+    include '../utils/countPage.php';
+    // 从数据源中获取当前页的记录（假设使用数据库查询）
+    $sql = "SELECT * FROM course LIMIT $startIndex, $pageSize";
+    $result = mysqli_query($conn, $sql);
 
     //输出数据
     if($result->num_rows > 0){
@@ -21,4 +24,5 @@
                  .  "</table>" ;
         }
     }
+    include '../utils/page.php';
 ?>
