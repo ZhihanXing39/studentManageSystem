@@ -9,20 +9,19 @@
 
     //输出数据
     if($result->num_rows > 0){
-        
+        echo "<table>";
         while($row = $result->fetch_assoc()){
             //输出信息到页面
-            echo "<table>"
-                 . "<tr>"
-                 . "<td>" . $row["id"] . "</td>"
-                 . "<td>" . $row["name"] . "</td>"
-                 . "<td>" . $row["gender"] . "</td>"
-                 . "<td>" . $row["klass"] . "</td>"
-                 . "<td><button id=". $row["id"] ." class='update'>修改</button></td>"
-                 . "<td><button id=". $row["id"] ." class='delete'>删除</button></td>"
-                 . "</tr>"
-                 .  "</table>" ;
+            echo "<tr>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["name"] . "</td>";
+            echo "<td>" . $row["gender"] . "</td>";
+            echo "<td>" . $row["klass"] . "</td>";
+            echo "<td><button id=". $row["id"] ." class='update'>修改</button></td>";
+            echo "<td><button id=". $row["id"] ." class='delete'>删除</button></td>";
+            echo "</tr>";
         }
+        echo  "</table>" ;
     }
     include '../utils/page.php';
 ?>

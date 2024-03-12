@@ -10,20 +10,19 @@
 
     //输出数据
     if($result->num_rows > 0){
-        
+        echo "<table>";
         while($row = $result->fetch_assoc()){
             //输出信息到页面
-            echo "<table>"
-                 . "<tr>"
-                 . "<td>" . $row["sid"] . "</td>"
-                 . "<td>" . $row["sname"] . "</td>"
-                 . "<td>" . $row["cname"] . "</td>"
-                 . "<td>" . $row["grade"] . "</td>"
-                 . "<td><button class='update' data-sid=".$row["sid"]." data-cid=".$row["cid"].">修改</button></td>"
-                 . "<td><button class='delete' data-sid=".$row["sid"]." data-cid=".$row["cid"].">删除</button></td>"
-                 . "</tr>"
-                 .  "</table>" ;
+            echo "<tr>";
+            echo "<td>" . $row["sid"] . "</td>";
+            echo "<td>" . $row["sname"] . "</td>";
+            echo "<td>" . $row["cname"] . "</td>";
+            echo "<td>" . $row["grade"] . "</td>";
+            echo "<td><button class='update' data-sid=".$row["sid"]." data-cid=".$row["cid"].">修改</button></td>";
+            echo "<td><button class='delete' data-sid=".$row["sid"]." data-cid=".$row["cid"].">删除</button></td>";
+            echo "</tr>";
         }
+        echo  "</table>" ;
     }
     include '../utils/page.php';
 ?>

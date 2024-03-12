@@ -1,12 +1,3 @@
-table{
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-table tr td {
-    /* width: 5rem; */
-    width: 16%;
-    border: 1px solid ;
-    padding: 8px;
-    text-align: left;
+table, td{
+    border: 1px solid black;
 }
